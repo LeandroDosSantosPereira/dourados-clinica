@@ -53,10 +53,12 @@
 		<div class="container">
 			<div class="content-box">
 				<h1>Somos a Melhor Escolha para a sua Saúde Bucal</h1>
+				<a href="#contact" class="btn-contact">Entre em Contato</a>
 			</div>
 		</div>
 	</div>
 	<!-- end intro -->
+
 
 
 	<!-- features -->
@@ -423,6 +425,30 @@
 		.navbar.scrolled {
 			background-color: rgba(115, 115, 116, 0.9);
 			/* Define a cor de fundo ao rolar a página */
+		}
+
+		.btn-contact {
+			background-color: #37bc9b;
+			color: white;
+			padding: 10px 20px;
+			border-radius: 20px;
+			text-decoration: none;
+			margin-top: 20px;
+			/* Ajuste o espaçamento conforme necessário */
+			display: inline-block;
+			/* Para que o botão não fique colado no texto */
+			position: relative;
+			/* Adiciona posição relativa ao botão */
+			z-index: 1;
+			/* Define a ordem de empilhamento do botão */
+			transition: transform 0.3s;
+			/* Adiciona uma transição suave para o efeito de zoom */
+		}
+
+		.btn-contact:hover {
+			transform: scale(1.1);
+			color: white;
+			/* Aumenta em 10% o tamanho do botão ao passar o mouse por cima */
 		}
 	</style>
 	<script>
