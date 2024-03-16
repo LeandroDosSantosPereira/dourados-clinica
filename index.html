@@ -169,42 +169,42 @@
 			<h2 class="text-center">Conheça os Serviços que Oferecemos</h2>
 			<div class="row g-5">
 				<div class="col-md-4">
-					<div class="content">
+					<div class="content card-hover">
 						<img src="images/services1.png" alt="">
 						<h5>Consulta Odontológica</h5>
 						<p>Agende uma consulta para verificar a saúde bucal e prevenir problemas futuros.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="content">
+					<div class="content card-hover">
 						<img src="images/services2.png" alt="">
 						<h5>Tratamento de Canal</h5>
 						<p>Tratamento para remover a polpa infectada e salvar um dente com cárie profunda.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="content">
+					<div class="content card-hover">
 						<img src="images/services3.png" alt="">
 						<h5>Limpeza Dental</h5>
 						<p>Remoção de tártaro e placa bacteriana para manter os dentes limpos e saudáveis.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="content">
+					<div class="content card-hover">
 						<img src="images/services4.png" alt="">
 						<h5>Ortodontia</h5>
 						<p>Tratamento para corrigir a posição dos dentes e melhorar a estética do sorriso.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="content">
+					<div class="content card-hover">
 						<img src="images/services5.png" alt="">
 						<h5>Extração Dentária</h5>
 						<p>Procedimento para remover um dente que não pode ser salvo devido a danos.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="content">
+					<div class="content card-hover">
 						<img src="images/services6.png" alt="">
 						<h5>Branqueamento Dental</h5>
 						<p>Procedimento para clarear os dentes e remover manchas e descolorações.</p>
@@ -229,7 +229,7 @@
 				</div>
 				<div class="col-md">
 					<div class="content">
-						<div class="entry">
+						<div class="entry card-hover">
 							<div class="image">
 								<img src="images/testimonial1.png" alt="">
 							</div>
@@ -239,7 +239,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="entry entry2">
+						<div class="entry entry2 card-hover">
 							<div class="image">
 								<img src="images/testimonial2.png" alt="">
 							</div>
@@ -248,7 +248,7 @@
 								<p>"Encontrei na clínica o atendimento que procurava. Recomendo a todos!"</p>
 							</div>
 						</div>
-						<div class="entry">
+						<div class="entry card-hover">
 							<div class="image">
 								<img src="images/testimonial3.png" alt="">
 							</div>
@@ -341,8 +341,8 @@
 						<li><a href=""><i class="la la-youtube"></i></a></li>
 					</ul>
 				</div>
-				<div class="col-md col-sm col-12">
-					Copyright © All Right Reserved
+				<div class="col-md col-sm col-12" id="footer">
+					© Todos os direitos reservados - <span id="currentYear"></span> | Desenvolvido por: Leandro Pereira
 				</div>
 			</div>
 		</div>
@@ -457,6 +457,15 @@
 			transform: scale(1.5);
 			/* Ajuste o valor conforme necessário para o efeito de zoom desejado */
 		}
+
+		.card-hover {
+			transition: transform 0.3s;
+		}
+
+		.card-hover:hover {
+			transform: scale(1.1);
+			/* Ajuste o valor conforme desejado */
+		}
 	</style>
 	<script>
 		$(window).scroll(function () {
@@ -469,6 +478,8 @@
 			}
 		});
 
+		let currentYear = new Date().getFullYear();
+  document.getElementById('currentYear').textContent = currentYear;
 	</script>
 </body>
 
