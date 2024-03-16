@@ -1,7 +1,4 @@
-/*
-Items Name : Dentare
-Author : Ngetemplates
--------------------------------- */
+
 /* ------------------------------
   Import Google Web Font
 ---------------------------------*/
@@ -148,12 +145,12 @@ span.span-title-left {
   z-index: 99;
   text-align: center;
 }
-.navbar .navbar-brand {
+/* .navbar .navbar-brand {
   text-align: left;
   width: 25%;
-}
+} */
 .navbar .navbar-brand img {
-  height: 40px;
+  height: 90px;
   width: auto;
 }
 .navbar .navbar-toggler {
@@ -598,9 +595,9 @@ footer ul li i:hover {
     padding: 0 25px;
   }
 
-  .navbar .navbar-brand img {
-    height: 32px;
-  }
+  /* .navbar .navbar-brand img {
+    height: 100px;
+  } */
 
   h1 {
     font-size: 48px;
